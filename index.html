@@ -9,9 +9,9 @@
     <body>
         <div class="layout">
             <!-- Header -->
-            <header class="header">
+            <header class="header" id="header">
                 <div class="header-left">
-                    <img src="" alt="Logo Juego">
+                    <img src="ganar.png" alt="Logo Juego" width="137" height="117">
                 </div>
                 <div class="header-right">
                     <h1>SUB-VELOX</h1>
@@ -27,28 +27,188 @@
                 </ul>
             </nav>
             <!-- Main -->
-            <main class="main">
+            <main class="main" id="main">
                 <section class="section-container">
+                    <!-- Titulo del Main explicando el juego -->
                     <div class="section-principal">
                         <h2>HISTORIA DEL JUEGO SUB VELOX</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem unde impedit commodi, culpa esse, eos quaerat consequatur voluptatum, eligendi odit quibusdam totam sit vel quis doloribus. Quas, eveniet amet.</p>
+                        <p>Juego basado en una nave perdida por el espacio, cruzando por la orbita del sistema solar, encontrando tanto asteroides como naves espaciales de diferentes niveles<br/>Al final del camino esta el Jefe que manda a todos su ejercito de naves enemigas <br/> Juego creado en processing y desarrollado por Chimale Luciano Karim</p>
                     </div>
+                    <!-- Menu Intro -->
                     <div class="section-card">
-                        <img src="nivel-intro.png" alt="nivel-intro">
-                            <h2>Nivel Intro</h2>
-                            <p>Informacion del nivel</p>
                         <div class="section-image">
-                            
+                            <img src="nivel-intro.png" alt="nivel-intro">
                         </div>
                         <div class="section-info">
-                            
+                            <h2>Nivel Intro - Menu del juego</h2>
+                            <p>Menu principal del juego, Titulo del juego SUB-VELOX, jugabilidad en 8 direcciones usando las teclas direccionales del teclado, pose proyectiles que pueden ser disparados con la letra 'X', apretar espacio para continuar con el juego</p>
                         </div>
                     </div>
-   
+                    <!-- Nivel Tutorial -->
+                    <div class="section-card">
+                        <div class="section-image">
+                            <img src="nivel-tutorial.png" alt="nivel-tutorial">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nivel Tutorial</h2>
+                            <p>Nivel introductorio a las mecanicas: Destruye los asteroides <br/>
+                                La nave se puede mover por ls 8 direcciones <br/>
+                                Vista del hud <br/>
+                                Barra de vida 100 puntos de vida <br/>
+                                Cantidad proyectiles 50 unidades <br/>
+                                Nivel de level up : segun cuantos asteroides y naves enemigas destruyas podras pasar de nivel <br/>
+                                Barra de progreso que se carga a medida que destruimos asteroides o naves enemigas</p>
+                        </div>
+                    </div>
+                    <!-- Nivel Tutorial -->
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="nave.png" alt="nave" id="miNave" width="100" height="100">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nave Nivel 1</h2>
+                            <p>Aspecto de Nave Nivel 1, vida maxima de 50, Proyectiles maximos de 50, nivel inicial de la nave, para lograr subir de nivel deberas destruir una cantidad especifica de asteroides y naves enemigas durante los niveles, tambien cuenta con poder recolectar tanto vida como municiones durante el nivel</p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="asteroide.png" alt="asteroide" id="miNave" width="70" height="70">
+                        </div>
+                        <div class="section-info">
+                            <h2>Obstaculo 1: Asteroides</h2>
+                            <p>Los asteroides pueden aparecer durante todo el juego, tienen una velocidad normal causando un daño de 10 puntos de vida a la nave si llegan a ser intersectados, existen otras variables del asteroide como los planetas Tierra y la estrella gigante el Sol</p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="naveEnemiga1.png" alt="nave-enemiga" id="miNave" width="76" height="49">
+                        </div>
+                        <div class="section-info">
+                            <h2>Enemigo 1: Nave Enemiga</h2>
+                            <p>Las naves enemigas son subditos del Jefe final, con una velocidad normal y con 30 puntos de daño para la nave espacial, las naves cuentan con proyectiles enemigos con daño de 20 puntos de vida, existen 2 niveles mas de naves enemigas</p>
+                        </div>
+                    </div>
+                    <!-- Nivel 1 -->
+                    <div class="section-card">
+                        <div class="section-image">
+                            <img src="nivel-uno.png" alt="nivel-uno">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nivel Uno</h2>
+                            <p>Nivel 1 sin tutorial con libertad de navecacion por todo el espacio destuyendo todo lo que encuentres a tu paso, posibilidad de subir de nivel cuanto cumplas las condiciones del Level UP <br/>
+                            Aparicion de nuevos obstaculos y naves enemigas tanto de nivel 2 como nivel 3</p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="nave2.png" alt="nave" id="miNave" width="82" height="94">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nave Nivel 2</h2>
+                            <p>Nave de nivel 2, cuenta con 150 puntos de vida, cantidad de proyectiles de 100, cañon de disparo doble, es decir, saldran 2 proyectiles cada vez que dispares</p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="tierra.png" alt="nave" id="miNave" width="70" height="70">
+                        </div>
+                        <div class="section-info">
+                            <h2>Obstaculo 2:Planeta Tierra</h2>
+                            <p>El planeta tierra cruzandose por el camino de Sub-Velox, obstaculo normal con posibilidad de estrellarse con la nave, puntos de vida restantes de 30 puntos</p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="naveEnemiga2.png" alt="nave" id="miNave" width="87" height="56">
+                        </div>
+                        <div class="section-info">
+                            <h2>Enemigo 2:Nave Enemiga Nivel 2</h2>
+                            <p>Nave enemiga de nivel 2 con los mismos atributos que su anterior nivel pero esta vez con mas resistencia, nivel de daño de los proyectiles es un total de 40 puntos</p>
+                        </div>
+                    </div>
+                    <!-- Nivel 2 -->
+                    <div class="section-card">
+                        <div class="section-image">
+                            <img src="nivel-dos.png" alt="nivel-dos">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nivel Dos</h2>
+                            <p>Casi llegando al final, el nivel 2 cuenta con la dificultad dificil del juego, los obstaculos y naves enemigas aparecen mas rapido, posibilidades de agarrar mejoras de curas o proyectiles recogibles</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="sol.png" alt="nave" id="miNave" width="74" height="69">
+                        </div>
+                        <div class="section-info">
+                            <h2>Obstaculo 3:El Sol</h2>
+                            <p>El sol es otro obstaculo de este juego, es igual al planeta tierra, cueenta con el mismo daño base hacia la nave Sub-Velox, forma parte del sistema solar junto al planeta tierra y a los asteroides que pueden cruzarse por encima</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="naveEnemiga3.png" alt="nave" id="miNave" width="80" height="56">
+                        </div>
+                        <div class="section-info">
+                            <h2>Enemigo 3:Nave Enemiga Nivel 3</h2>
+                            <p>Nave enemiga nivel 3, nivel maximo de los enemigos, mano de derecha del Jefe Final, contando con proyectiles enemigos y un daño considerable para la nave Sub-Velox</p>
+                        </div>
+                    </div>
+                    <!-- Nivel Jefe Final -->
+                    <div class="section-card">
+                        <div class="section-image">
+                            <img src="jefe2.png" alt="nivel-jefe">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nivel 3: Jefe Final</h2>
+                            <p>NIVEL FINAL: Pelea contra el Jefe, el final boss cuenta con una barra de vida de 500hp, con la posibilidad de tirar proyectiles poderosos con daño de hasta 70 puntos de vida, y si llegas a acercarte demasiado al jefe, su daño cuerpo a cuerpo es de 200hp, es un insta kill practicamente</p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="nave3.png" alt="nave" id="miNave" width="92" height="103">
+                        </div>
+                        <div class="section-info">
+                            <h2>Nave Nivel 3</h2>
+                            <p>Nivel maximo de la nave Sub-Velox, cuenta con 200hp, puntos de vida, cuenta con un cargador maximo de hasta 150 proyectiles, en este nivel la nave es capaz de tirar triple proyectil con un daño aumentado de 50 puntos encontra de los enemigos, este nivel es el nivel maximo de nave posible en el juego </p>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-image-item">
+                            <img src="jefeFinal.png" alt="nave" id="miNave" width="109" height="112">
+                        </div>
+                        <div class="section-info">
+                            <h2>Jefe Final</h2>
+                            <p>Final boss, el malvado de toda esta historia, junto a sus tripulantes de naves enemigas mas todos los obstaculos que es posible mandar y desviar, este jefe es el ultimo nivel del juego, si logras derrotarlo conseguiras ganar el juego, caso contrario, te mandara al game over estimado</p>
+                        </div>
+                    </div>
+                    <!-- GameOver -->
+                    <div class="section-card">
+                        <div class="section-image">
+                            <img src="gameover.png" alt="gameover">
+                        </div>
+                        <div class="section-info">
+                            <h2>Game Over</h2>
+                            <p>Pantalla Game Over, cuando consigues que la nave se quede sin vida, que llegue la vida al 0, seras enviado a este apartado, para reiniciar el juego debes apretar el ENTER</p>
+                        </div>
+                    </div>
+                    <!-- Winner -->
+                    <div class="section-card">
+                        <div class="section-image">
+                            <img src="win.png" alt="winner">
+                        </div>
+                        <div class="section-info">
+                            <h2>Winner</h2>
+                            <p>Pantalla Winner, cuando logras pasar todos los niveles, subiendo de nivel 3 a la nave y derrotando al Jefe final, lograras completar el juego y conseguir el logro de Sub-Velox Infinito, que sera un modo de juego para seguir destruyendo todo lo que tengas a tu paso conviendote en el nuevo Jefe Final</p>
+                        </div>
+                    </div>
                 </section>
             </main>
             <!-- Footer -->
-            <footer class="footer">
+            <footer class="footer" id="footer">
                 <div class="footer-content">
                     <div class="footer-section">
                         <h4>Informacion</h4>
